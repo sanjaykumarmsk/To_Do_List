@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <style>
+      .center {
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        right: 33%;
+      }
+
+      .border {
+        border: 2px solid rgb(241, 236, 236);
+        border-radius: 10px;
+        padding: 7px;
+        margin: 10px;
+        height: 38px;
+        width: 500px;
+        cursor: pointer;
+        color: rgb(32, 33, 36);
+        font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+        font-size: 18px;
+      }
+
+      /* #second{
+            display: inline-block;
+        } */
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+
+      #Google,
+      img {
+        margin-right: 10px;
+      }
+
+      #Google:hover {
+        background-color: rgb(243, 246, 246);
+      }
+
+      #face img {
+        margin-right: 10px;
+      }
+
+      #face:hover {
+        background-color: rgb(243, 246, 246);
+      }
+
+      #apple img {
+        margin-right: 2px;
+        width: 35px;
+      }
+       h4 img{
+        padding-top: 4px;
+       }
+
+      #apple:hover {
+        background-color: rgb(243, 246, 246);
+      }
+
+      /* #email{
+            display: inline;
+           
+        } */
+      #btn {
+        background-color: rgb(238, 50, 50);
+        height: 30px;
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: auto;
+      }
+
+      #btn:hover {
+        background-color: rgb(220, 64, 64);
+      }
+
+      .form-control {
+        border: 0px solid white;
+      }
+
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+      }
+
+      h2 {
+        text-align: left;
+      }
+
+      #email {
+        text-align: left;
+      }
+
+      #password {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+        padding-left: 5px;
+      }
+
+      #title {
+        border: none;
+      }
+
+      #title1 {
+        border: none;
+      }
+
+      input {
+        border: none;
+      }
+
+      @media screen and (max-width: 300px) {
+        .center,
+        .border {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="center">
+      <h2>TODOs</h2>
+      <br /><br />
+      <h3>Log in</h3>
+      <h4 class="border" id="Google">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"
+          alt=""
+        />Continue with Google
+      </h4>
+      <h4 class="border" id="face">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+          alt=""
+        />Continue with Facebook
+      </h4>
+      <h4 class="border" id="apple">
+        <img
+          src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png"
+          alt=""
+        />Continue with Apple
+      </h4>
+      <hr
+        style="
+          width: 95%;
+          text-align: center;
+          margin-left: 10px;
+          background-color: rgb(241, 236, 236);
+        "
+      />
+      <h4 class="border" id="email">
+        Email <br />
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          placeholder="Enter your email..."
+        />
+      </h4>
+      <h4 class="border" id="password">
+        Password<br />
+        <input style="border: none;" type="text" id="fname" name="fname" placeholder="Enter your password">
+      </h4>
+      <br />
+      <h4 class="border" id="btn"><a href="http://127.0.0.1:5500/Project_2/index.html" style="text-decoration: none; color: white;">Log in</a></h4>
+      <br />
+      <a href="url" style="color: black; padding-right: 68%"
+        >Forgot your password?</a
+      >
+      <p>
+        By continuing with Google, Apple, or Email, you are agree to TODOs<br />
+        <a href="url">Terms and services</a> ans
+        <a href="url">Preivacy Policy</a>.
+      </p>
+      <hr
+        style="
+          width: 95%;
+          text-align: center;
+          margin-left: 10px;
+          background-color: rgb(252, 252, 252);
+        "
+      />
+
+      Don't have an account?
+      <a href="http://127.0.0.1:5500/Project_2/signup.html">Sign up</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>TODOs List</title>
+    <style>
+      .main {
+        text-align: center;
+        padding-top: 90px;
+    
+       
+    }
+    h1{
+        font-size: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+    img{
+        height: 50%;
+    }
+
+.column {
+  text-align: center;
+  width: 10%;
+  margin: 30px;
+    padding: 2px;
+
+}
+
+.row{
+display: flex;
+padding-left: 200px;
+
+}
+a.btn{
+  height: 50px;
+  width: 100px;
+  display: inline;
+  float: right;
+  text-align: center;
+  padding: 0 5px;
+  box-sizing: none;
+  border: none;
+}
+  
+.column_1{
+  
+  width: 16%;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 10px;
+  border: 2px solid rgb(220, 212, 212);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.column_1 img{
+  width: 16%;
+  height: 150px;
+}
+.column_1 p{
+  font-size: 15px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.row_1 {
+  align-items: center;
+  display: flex;
+  padding-left: 170px;
+}
+
+/* Clearfix (clear floats) */
+.row_1::after {
+  content: "";
+  clear: both;
+
+}
+.row a p{
+  padding:5px 10px;
+  margin: 350px 5px;
+  display: inline-flex;
+}table {
+  font-family: arial, sans-serif;
+  /* border-collapse: collapse; */
+  width: 100%;
+  text-decoration: none;
+}
+
+td, th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+  text-decoration: none;
+}
+td{
+  cursor: pointer;
+}
+
+/* tr:nth-child(even) {
+  background-color: #dddddd;
+} */
+@media(max-width:700px){
+  .row{
+    width: 200px;
+    justify-content: center;
+  }
+  .row_1{
+    width: 200px;
+    justify-content: center;
+  }
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="position: fixed; width: 100%; padding-top: 5px;">
+      <a class="navbar-brand" href="#">TODOs List</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Features <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solutions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Resources</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"
+                ><h6>Integrations</h6>
+                <p style="font-size: 16px;">
+                  Connect TODOs with tools like IFTTT,<br />
+                  Alexa, Google Calendar, ans more...
+                </p></a
+              >
+
+              <a class="dropdown-item" href="#"
+                ><h6>Getting Started Guide</h6>
+                <p style="font-size: 16px;">
+                  Everything you need to know to get your<br />
+                  TODOs up and running in minutes.
+                </p></a
+              >
+              <a class="dropdown-item" href="#"
+                ><h6>Help Center</h6>
+                <p style="font-size: 16px;">
+                  Find answer to your questions ans tips for<br />
+                  getting the most out of your TODOs list.
+                </p></a
+              >
+              <a class="dropdown-item" href="#"
+                ><h6>Productivity Methods + Quiz</h6>
+                <p style="font-size: 16px;">
+                  Learn the most popular productivity<br />
+                  methods ans discover which one fits you<br />
+                  best.
+                </p>
+              </a>
+              <a class="dropdown-item" href="#"
+                ><h6>Inspiration Hub</h6>
+                <p style="font-size: 16px;">
+                  Productivity advice you won't find<br />
+                  anywhere else, plus TODOs tips ans<br />
+                  product news.
+                </p></a
+              >
+              <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="nav-link" href="#">Contact Sales</a>
+          <a class="nav-link" href="http://127.0.0.1:5501/four.html#"
+            >Log in</a
+          >
+
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >
+            <a href="http://127.0.0.1:5501/four.html#"
+            style="text-decoration: none; color: white;">Start for free</a
+            >
+          </button>
+        </form>
+      </div>
+    </nav>
+
+
+
+    <div class="main">
+      <h1>
+        Organize your work<br />
+        and life, finally.
+      </h1>
+      <br />
+      <p>
+        Become focused, organized, and calm with TODOs. The world's #1<br />
+        task manager and to-do list application.
+      </p>
+      <br />
+      <button type="button" class="btn btn-danger btn-lg"><a href="http://127.0.0.1:5501/four.html#" style="text-decoration: none; color: white;">Start for free</a></button>
+      <br/>
+    
+    <img style="width: 100%;" src="https://res.cloudinary.com/imagist/image/fetch/q_auto/f_auto/c_scale,w_1536/https%3A%2F%2Ftodoist.com%2Fstatic%2Fbusiness%2Fheader%402x.jpg"; alt="">
+    <img style="width: 100%;" src="https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_1536/https%3A%2F%2Ftodoist.com%2Fstatic%2Fhome-teams%2Fintro%2Fdesktop-layout%2Fbackground.en.png" alt="">
+   
+    <br/><br/>
+    <p>30 million+ people and teams trust their sanity and productivity to TODOs</p>
+  
+<div class="row">
+    <div class="column">
+      <img src="https://logolook.net/wp-content/uploads/2021/06/Microsoft-Logo.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/disney-logo-png-transparent.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/603px-Amazon_logo.svg.png" alt="Mountains" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="https://cdn.worldvectorlogo.com/logos/netflix-3.svg" alt="Mountains" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/6_Adobe_logo_logos-512.png" alt="Mountains" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://1000logos.net/wp-content/uploads/2017/08/Salesforce-Logo-500x329.png" alt="Mountains" style="width:100%">
+      </div>
+  </div>
+</div>
+
+<h2 style="text-align: center;">Explore all TODOs has to offer</h2><br/><br/>
+<div class="row_1">
+  <div class="column_1">
+    <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto/f_auto/c_scale,w_128/https%3A%2F%2Ftodoist.com%2Fstatic%2Fhome-teams%2Fexplore%2Ffeatures.png" alt="Snow" style="width:100%"><p>Features</p>
+  </div>
+  <div class="column_1">
+    <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto/f_auto/c_scale,w_128/https%3A%2F%2Ftodoist.com%2Fstatic%2Fhome-teams%2Fexplore%2Ftemplates.png" alt="Forest" style="width:100%"><p>Templates gallery</p>
+  </div>
+  <div class="column_1">
+    <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto/f_auto/c_scale,w_128/https%3A%2F%2Ftodoist.com%2Fstatic%2Fhome-teams%2Fexplore%2Fprod-quiz.png" alt="Mountains" style="width:100%"><p>Productivity Quize</p>
+  </div>
+  <div class="column_1">
+    <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto/f_auto/c_scale,w_128/https%3A%2F%2Ftodoist.com%2Fstatic%2Fhome-teams%2Fexplore%2Fextensions.png" alt="Forest" style="width:100%"><p>Extension gallery</p>
+  </div>
+  <div class="column_1">
+    <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto/f_auto/c_scale,w_128/https%3A%2F%2Ftodoist.com%2Fstatic%2Fhome-teams%2Fexplore%2Finspiration.png" alt="Forest" style="width:100%"><p>Inspiration hub</p>
+  </div>
+</div>
+<br/><br/>
+<h3 style="text-align: center;color: red;">In it for the long haul</h3><br/>
+<h2 style="text-align: center; font-weight: bolder;">A task manager you<br/>can trust for life</h2>
+<h5 style="text-align: center; color: rgb(148, 145, 140);">We've been building TODOs for 16 years<br/>and 348 days. Rest assured that we'll never<br/>sell out to the  highest bidder.</h5>
+<br/><br/>
+<h2 style="text-align: center; font-weight: bolder;">Gain calmness and clarity with the <br/>world's most beloved productivity app</h1>
+  <br/>
+  <h5 style="text-align: center; color: rgb(149, 145, 140);">337,000+ 
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span> reviews on Google Play and App Store</h5>
+    <div class="main">
+      <button type="button" class="btn btn-danger btn-lg"><a href="http://127.0.0.1:5501/four.html#" style="color: aliceblue; text-decoration: none;">Start for free</a></button>
+      <h6 style="cursor: pointer; padding-top: 30px;"><i class="fa fa-download" style="padding-right:2px;"></i>Download apps</h6>
+    </div>
+      <br/>
+    
+<hr>
+
+  <!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <table style="width: 100%;">
+    <tr>
+      <th>TODOs</th>
+      <th>Features</th>
+      <th>Resources</th>
+      <th>Company</th>
+      <th><a
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          href="#!"
+          role="button"
+          ><img style="text-decoration: none;" class="resize" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_glyph_svg-512.png" alt=""></a>  </th>
+    </tr>
+    <tr>
+      <td>Join millions of people who organize<br/>work and life with TODOs.</td>
+      <td>How it<br/>works</td>
+      <td>Download Apps</td>
+      <td>About Us</td>
+      <td><a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        href="#!"
+        role="button"
+        ><img src="https://cdn1.iconfinder.com/data/icons/social-media-2149/100/--06-512.png" alt=""></a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>For Teams</td>
+      <td>Help Center</td>
+      <td>Careers</td>
+      <td><a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        href="#!"
+        role="button"
+        ><img src="https://cdn1.iconfinder.com/data/icons/social-media-2149/100/--03-512.png" alt=""></a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pricing</td>
+      <td>Productivity<br/>Methods</td>
+      <td>Inspiration<br/>Hub</td>
+      <td>   <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        href="#!"
+        role="button"
+        ><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" alt=""></a>
+  </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Templates</td>
+      <td>Integrations</td>
+      <td>Press</td>
+      <td><a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        href="#!"
+        role="button"
+        ><img src="https://cdn1.iconfinder.com/data/icons/social-media-2149/100/--10-512.png" alt=""></a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Channel<br/>Partners</td>
+      <td>Twist</td>
+      <td><a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1"
+        href="#!"
+        role="button"
+        ><img src="https://cdn1.iconfinder.com/data/icons/picons-social/57/github_rounded-512.png" alt=""></a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Developer API</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Status</td>
+      <td></td>
+      <td></td>
+    </tr>
+   
+  </table>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); width: 100%;">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="">www.msk34249.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function getAndUpdate() {
+        console.log("Updating List...");
+        tit = document.getElementById("title").value;
+        desc = document.getElementById("description").value;
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          itemJsonArray.push([tit, desc]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+          itemJsonArray.push([tit, desc]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        }
+        update();
+      }
+
+      function update() {
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+        }
+        // Populate the table
+        let tableBody = document.getElementById("tableBody");
+        let str = "";
+        itemJsonArray.forEach((element, index) => {
+          str += `
+                    <tr>
+                    <th scope="row">${index + 1}</th>
+                    <td>${element[0]}</td>
+                    <td>${element[1]}</td> 
+                    <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+                    </tr>`;
+        });
+        tableBody.innerHTML = str;
+      }
+      add = document.getElementById("add");
+      add.addEventListener("click", getAndUpdate);
+      update();
+      function deleted(itemIndex) {
+        console.log("Delete", itemIndex);
+        itemJsonArrayStr = localStorage.getItem("itemsJson");
+        itemJsonArray = JSON.parse(itemJsonArrayStr);
+        // Delete itemIndex element from the array
+        itemJsonArray.splice(itemIndex, 1);
+        localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        update();
+      }
+      function clearStorage() {
+        if (confirm("Do you areally want to clear?")) {
+          console.log("Clearing the storage");
+          localStorage.clear();
+          update();
+        }
+      }
+    </script>
+  </body>
+</html>
